@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .bg{
+            background-color: #6f4e37;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+        }
+
+        .container ul{
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        .container ul li a{
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .container ul li a:hover{
+            color: #f5deb3;
+        }
+
+        .sejajar{
+            display: flex;
+            align-items: center;
+        }
+
+        .sejajar h1{
+            margin-left: 10px;
+            font-size: 24px;
+        }
+
+        .sejajar img{
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .hero{
+            height: 90vh;
+            background: linear-gradient(135deg,#6f4e37, #8b5e3c);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            padding:  20px;
+        }
+
+        .hero h2{
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        .hero p{
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .btn{
+            background: #d2b48c;
+            color: #4b2e2e;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-weight: 600;
+        }
+
+        @media(max-width:768px){
+            .container{
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .hero h2{
+                font-size: 35px;
+            }
+
+            .container ul{
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="bg">
+        <div class="container">
+            <div class="sejajar">
+                <img src="img/logo-coffe.jpeg" alt="Coffee Logo">
+                <h1>Coffee Shop</h1>
+            </div>
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h2>Fresh Coffee Every Day</h2>
+        <p>Nikmati kopi terbaik dengan suasana yang nyaman.</p>
+        <a href="#" class="btn">Order Now</a>
+    </section>
+
+</body>
+</html>
